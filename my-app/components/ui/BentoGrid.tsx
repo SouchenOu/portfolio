@@ -96,7 +96,7 @@ export const BentoGridItem = ({
         {id === 6 && (<BackgroundGradientAnimation>
           <div className="absolute z-50 items-center justify-center text-white font-bold"/>
           </BackgroundGradientAnimation>)}
-        <div className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-1 p-1 lg:p-1')
+        <div className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-2 p-1 lg:p-4')
         }>
           <div className="font-sans font-extralight text-[#c1c2d3]  text-sm dark:text-neutral-200 md:text-xs lg:text-base z-10">
             {description}
@@ -109,7 +109,7 @@ export const BentoGridItem = ({
       </div>
       
       {id === 2 && <GlobeDemo/>}
-      {id === 3 && (<div className="flex gap-1 lg:gap-5 lg:w-[490px] sm:w-[200px] absolute -right-3 lg:-right-2">
+      {id === 3 && (<div className="flex gap-1 lg:gap-5 lg:w-[470px] sm:w-[200px] absolute -right-3 lg:-right-2">
         <div className="flex flex-col gap-3 lg:gap-8">
           {['C', 'C++', 'TypeScript', 'JavaScript'].map((item)=>(
             <span key="item" className="py-2 lg:py-4 lg:px-8  px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">{item}</span>
@@ -133,7 +133,7 @@ export const BentoGridItem = ({
         </div>
       </div>)}
       {id === 6 && (
-        <div className="mb-[300px] relative ml-[230px]">
+        <div className="mb-[300px] relative ml-[230px] bottom-[70px]">
           <div className={`absolute -bottom-5 right-0`}>
               <Lottie options={{loop: copied, autoplay: copied, animationData, rendererSettings:{preserveAspectRatio: 'xMidYMid slice'}}}/>
           </div>
