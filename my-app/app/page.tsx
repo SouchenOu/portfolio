@@ -1,5 +1,6 @@
 import { Grid } from "@/components/Grid";
 import { Main } from "@/components/Main";
+import Projects from "@/components/Projects";
 import { Nav } from "@/components/ui/Nav";
 import { FaHome } from "react-icons/fa";
 
@@ -11,6 +12,7 @@ export default function Home() {
           <Nav navItems={[{name: 'Home', link: '/', icon: <FaHome/>}]}/>
           <Main/>
           <Grid/>
+          <Projects/>
 
 
         </div>
