@@ -17,7 +17,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-        Interested in working together? <span className="text-blue-900">We should queue up a time to chat.</span> I’ll buy the coffee.
+        Interested in working together? <span className="text-purple">We should queue up a time to chat.</span> I’ll buy the coffee.
 
 
         </h1>

@@ -33,9 +33,13 @@ export const Contact: React.FC = () => {
 
   return (
     <div id="contact" className="flex justify-between items-center min-h-screen 0 p-4">
-      <img alt="" src="/conta.jpg"/>
-      <div className="w-full max-w-2xl p-8 rounded-lg shadow-md">
-        <h2 className="text-5xl font-semibold text-center text-blue-900 mb-6">Get in Touch</h2>
+    <img 
+      alt="Image Description" 
+      src="/conta.jpg" 
+      className="w-full max-w-[800px] h-auto rounded-lg shadow-lg border-2 border-gray-300 transform transition-transform duration-300 ease-in-out hover:scale-105"
+    />      
+    <div className="w-full flex flex-col gap-[40px] max-w-2xl p-8 rounded-lg shadow-md">
+        <h2 className="text-5xl font-semibold text-center text-purple mb-6">Get in Touch</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className='flex items-center gap-[10px]'>
             <div className="form-group">

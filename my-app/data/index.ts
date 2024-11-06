@@ -77,14 +77,16 @@ export const navItems = [
       img: "/image6.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.earth.com",
+      href: "/websites/dantaire",
     },
     {
       id: 2,
-      title: "Elearning-webste",
+      title: "Elearning-website",
       des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
       img: "/1.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.yoom.com",
+      href: "/websites/learning"
     },
     {
       id: 3,
@@ -93,6 +95,7 @@ export const navItems = [
       img: "/2.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.aiimg.com",
+      href: "/websites/ecommerce",
     },
     {
       id: 4,
@@ -101,6 +104,7 @@ export const navItems = [
       img: "/3.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
+      href: "/websites/amazon"
     },
     {
       id: 5,
@@ -109,6 +113,7 @@ export const navItems = [
       img: "/4.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
       link: "/ui.apple.com",
+      href: "/websites/marketing"
     },
     {
       id: 6,
@@ -117,6 +122,7 @@ export const navItems = [
       img: "/5.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/socket.png"],
       link: "/ui.apple.com",
+      href: "websites/chat"
     },
     {
       id: 7,
@@ -125,6 +131,7 @@ export const navItems = [
       img: "/6.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.apple.com",
+      href:"/websites/tech",
     },
     {
       id: 8,
@@ -133,6 +140,7 @@ export const navItems = [
       img: "/7.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "node.png"],
       link: "/ui.apple.com",
+      href: "/websites/booking"
     },
     {
       id: 9,
@@ -141,6 +149,7 @@ export const navItems = [
       img: "/8.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
+      href: "/websites/whatsup"
     },
     {
       id: 9,
@@ -149,6 +158,7 @@ export const navItems = [
       img: "/9.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
+      href: "/websites/travel"
     },
     {
       id: 9,
@@ -157,6 +167,7 @@ export const navItems = [
       img: "/10.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png", "node.png"],
       link: "/ui.apple.com",
+      href: "/websites/survey"
     },
     {
       id: 9,
@@ -165,6 +176,7 @@ export const navItems = [
       img: "/11.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
+      href: "/websites/portfolio"
     },
   ];
   
