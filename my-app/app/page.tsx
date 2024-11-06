@@ -1,3 +1,5 @@
+import { Contact } from "@/components/Contact";
+import Experience from "@/components/Experience";
 import { Grid } from "@/components/Grid";
 import { Main } from "@/components/Main";
 import Projects from "@/components/Projects";
@@ -13,6 +15,8 @@ export default function Home() {
           <Main/>
           <Grid/>
           <Projects/>
+          <Contact/>
+          <Experience/>
 
 
         </div>

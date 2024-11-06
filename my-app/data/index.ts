@@ -75,7 +75,7 @@ export const navItems = [
       title: "Dental website",
       des: "DentalCare Website helps you to make an appointement with the doctor that can helping you achieve a healthy and beautiful smile..",
       img: "/image6.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.earth.com",
     },
     {
@@ -83,7 +83,7 @@ export const navItems = [
       title: "Elearning-webste",
       des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
       img: "/1.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.yoom.com",
     },
     {
@@ -91,7 +91,7 @@ export const navItems = [
       title: "Ecommerce website",
       des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
       img: "/2.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.aiimg.com",
     },
     {
@@ -99,7 +99,7 @@ export const navItems = [
       title: "Amazon website",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/3.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
     },
     {
@@ -107,7 +107,7 @@ export const navItems = [
       title: "Marketing website",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/4.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
       link: "/ui.apple.com",
     },
     {
@@ -115,7 +115,7 @@ export const navItems = [
       title: "Chat website",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/5.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/socket.png"],
       link: "/ui.apple.com",
     },
     {
@@ -123,7 +123,7 @@ export const navItems = [
       title: "Tech platform",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/6.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.apple.com",
     },
     {
@@ -131,7 +131,7 @@ export const navItems = [
       title: "Booking app",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/7.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "node.png"],
       link: "/ui.apple.com",
     },
     {
@@ -139,7 +139,7 @@ export const navItems = [
       title: "Whatsup platform",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/8.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
     },
     {
@@ -147,7 +147,7 @@ export const navItems = [
       title: "Travel applicaton",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/9.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
     },
     {
@@ -155,7 +155,7 @@ export const navItems = [
       title: "Survey Hotjar platform",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/10.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "js.png", "node.png"],
       link: "/ui.apple.com",
     },
     {
@@ -163,7 +163,7 @@ export const navItems = [
       title: "Portfolio",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/11.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
     },
   ];
@@ -238,28 +238,28 @@ export const navItems = [
     {
       id: 1,
       title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      desc: "As a frontend developer intern with three organizations in Morocco, I worked on diverse projects. At OCP, I built a React.js web application for IT equipment discharge management. With RAMSA, I developed a Human Resource Management application using JavaScript. At Maroc Annonce, I created an e-commerce website with WordPress. These roles enhanced my skills across various tools and platforms.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "FullStack Enginner Intern",
+      desc: "During my internship at Avito, I developed a survey platform similar to Hotjar, using React.js, Node.js, and MongoDB. The platform allowed users to run surveys on avito.ma, with features such as survey type selection for web or app deployment and campaign management for activating or deactivating surveys. I also implemented dynamic survey components, including a title, logo, text input, NPS, radio buttons, multi-select options, and call-to-action buttons, which users could customize and stack on the survey page. This project enhanced my skills in full-stack development and survey management.",
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
       title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      desc: "As a frontend freelancer, I worked on several projects on freelancing platforms, specializing in React.js and Next.js. I built responsive web applications, collaborated with clients, and delivered high-quality solutions on time. This experience helped me improve my skills in building dynamic user interfaces and optimizing performance.",
+      className: "md:col-span-2",
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Student at 1337 school",
+      desc: "I am currently a student at 1337 School (42 Campus), where I have developed 21 projects in various programming languages. These projects include both solo and team-based work, allowing me to enhance my technical and collaboration skills. During this period, I have learned a wide range of concepts, from algorithms and data structures to advanced software development practices, which have significantly boosted my problem-solving and coding abilities.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
