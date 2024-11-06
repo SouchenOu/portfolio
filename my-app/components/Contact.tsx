@@ -32,7 +32,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-between items-center min-h-screen 0 p-4">
+    <div id="contact" className="flex justify-between items-center min-h-screen 0 p-4">
       <img alt="" src="/conta.jpg"/>
       <div className="w-full max-w-2xl p-8 rounded-lg shadow-md">
         <h2 className="text-5xl font-semibold text-center text-blue-900 mb-6">Get in Touch</h2>

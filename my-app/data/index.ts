@@ -1,8 +1,8 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
+    { name: "Experience", link: "#experience" },
   ];
   
   export const GridItems = [
@@ -269,13 +269,16 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/SouchenOu"
     },
     {
       id: 2,
       img: "/twit.svg",
+      link: "https://x.com/SoukainaOuchen"
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/soukaina-ouchen-a4321422b/"
     },
   ];
