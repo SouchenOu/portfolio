@@ -28,8 +28,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      title: "SKILLES",
+      description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -50,7 +50,7 @@ export const navItems = [
     {
       id: 5,
       title: "Currently building a banking web app",
-      description: "The Inside Scoop",
+      description: "",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -82,7 +82,7 @@ export const navItems = [
     {
       id: 2,
       title: "Elearning-website",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      des: "E-learning also called electronic learning or web-based trainin",
       img: "/1.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.yoom.com",
@@ -91,7 +91,7 @@ export const navItems = [
     {
       id: 3,
       title: "Ecommerce website",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+      des: "An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location..",
       img: "/2.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.aiimg.com",
@@ -100,7 +100,7 @@ export const navItems = [
     {
       id: 4,
       title: "Amazon website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "I tried to develop a website like Amazon Website, i have here focused only on books to add the in the shario...",
       img: "/3.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
@@ -109,7 +109,7 @@ export const navItems = [
     {
       id: 5,
       title: "Marketing website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "Digital marketing is a means of promoting and selling products and services through the internet, mobile devices, social media, search engines, ...",
       img: "/4.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
       link: "/ui.apple.com",
@@ -118,7 +118,7 @@ export const navItems = [
     {
       id: 6,
       title: "Chat website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "Online chatting apps are popular software tools that allow users to send and receive real-time messages online. They're heavily used in customer service and can offer text, audio, or video communication.",
       img: "/5.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/socket.png"],
       link: "/ui.apple.com",
@@ -127,7 +127,7 @@ export const navItems = [
     {
       id: 7,
       title: "Tech platform",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "Buy computers, software and all your IT technology assets in one place with Insight. Buy laptops, computers, hardware, software, cloud solutions and more ...",
       img: "/6.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
       link: "/ui.apple.com",
@@ -136,7 +136,7 @@ export const navItems = [
     {
       id: 8,
       title: "Booking app",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "Booking website is a Dutch website that offers accommodation in different types of premises ranging from hotels to tourist accommodation and apartments.",
       img: "/7.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "node.png"],
       link: "/ui.apple.com",
@@ -145,7 +145,7 @@ export const navItems = [
     {
       id: 9,
       title: "Whatsup platform",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "Online chatting apps are popular software tools that allow users to send and receive real-time messages online. They're heavily used in customer service and can offer text, audio, or video communication.",
       img: "/8.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
@@ -154,7 +154,7 @@ export const navItems = [
     {
       id: 9,
       title: "Travel applicaton",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "A travel website is a website that provides travel reviews, trip fares, or a combination of both. Over 1.5 billion people book travel per year, 70% of which is done online.",
       img: "/9.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
@@ -163,7 +163,7 @@ export const navItems = [
     {
       id: 9,
       title: "Survey Hotjar platform",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "build a platform that is similar to Hotjar Survey that would allow to run surveys in avito.ma",
       img: "/10.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png", "node.png"],
       link: "/ui.apple.com",
@@ -172,7 +172,7 @@ export const navItems = [
     {
       id: 9,
       title: "Portfolio",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "My latest portfolio.",
       img: "/11.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
       link: "/ui.apple.com",
