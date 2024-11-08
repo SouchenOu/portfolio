@@ -71,7 +71,7 @@ export const Page = () => {
 
       <div className="mt-8 p-4 text-center">
         <a
-          href="https://bookkingapp.netlify.app"
+          href="https://booking-hotelss.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl flex text-purple-500 hover:text-purple-700 font-semibold items-center justify-center space-x-4 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 rounded-lg p-3 transition-all duration-300"
@@ -82,7 +82,7 @@ export const Page = () => {
           {/* Link Text */}
           <span className="flex gap-2 text-3xl font-medium">
             <span>Visit the live site:</span>
-            <span className="underline text-violet-900">{'https://bookkingapp.netlify.app'}</span>
+            <span className="underline text-violet-900">{'https://booking-hotelss.netlify.app/'}</span>
           </span>
         </a>
       </div>
