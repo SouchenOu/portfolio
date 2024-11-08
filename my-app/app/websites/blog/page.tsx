@@ -65,7 +65,7 @@ export const Page = () => {
       {/* Visit Amazon Link */}
       <div className="mt-8 p-4 text-center">
         <a
-          href="https://www.Blog.com"
+          href="https://blog-9t9d.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl flex text-purple-500 hover:text-purple-700 font-semibold items-center justify-center space-x-4 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 rounded-lg p-4 transition-all duration-300"

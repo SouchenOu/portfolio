@@ -3,7 +3,6 @@ import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 interface FormData {
   firstName: string;
   lastName: string;
@@ -31,7 +30,6 @@ export const Contact: React.FC = () => {
     }));
   };
 
-  
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -47,17 +45,13 @@ export const Contact: React.FC = () => {
       if (response.ok) {
         toast.success('Your message was sent successfully!');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-
-
       } else {
-        alert('Failed to send message. Please try again later.');
+        toast.error('Failed to send message. Please try again later.');
       }
     } catch (error) {
       console.error('Error:', error);
       toast.error('An error occurred while sending your message.');
-
     } finally {
-      // Clear the form fields after submission attempt
       setLoading(false);
       setFormData({
         firstName: '',
@@ -70,208 +64,97 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <div id="contact" className="flex justify-between items-center min-h-screen 0 p-4">
-      <ToastContainer/>
-    <img 
-      alt="Image Description" 
-      src="/2.gif" 
-      className="w-full max-w-[800px] h-auto rounded-lg shadow-lg border-2 border-gray-300 transform transition-transform duration-300 ease-in-out hover:scale-105"
-    />      
-    <div className="w-full flex flex-col gap-[40px] max-w-2xl p-8 rounded-lg shadow-md">
-        <h2 className="text-5xl font-semibold text-center text-purple mb-6">Get in Touch</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className='flex items-center gap-[10px]'>
-            <div className="form-group">
-              <label htmlFor="firstName" className="block text-2xl font-medium text-gray-400">First Name</label>
-              <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  value={formData.firstName}
+    <div id="contact" className="flex flex-col p-[30px]">
+        <ToastContainer />
+
+      <h1 className="heading p-4 lg:p-9">
+        Contact <span className="text-purple">Me</span>
+      </h1>
+
+      <div className='flex flex-col justify-between lg:flex-row  items-center p-[30px] '>
+          <img 
+            alt="Image Description" 
+            src="/2.gif" 
+            className="w-full max-w-sm lg:max-w-md xl:max-w-3xl h-auto mb-8 lg:mb-0 rounded-lg shadow-lg border-2 border-gray-300 transition-transform duration-300 ease-in-out hover:scale-105"
+          />
+          <div className="w-full lg:w-1/2 xl:w-1/3 flex flex-col gap-8 max-w-2xl p-4 sm:p-8 rounded-lg shadow-md">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-purple text-purple-600 mb-6">Get in Touch</h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className='flex flex-col sm:flex-row items-center gap-4'>
+                <div className="form-group w-full">
+                  <label htmlFor="firstName" className="block text-lg sm:text-xl font-medium text-gray-600">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 block w-full px-4 py-3 border border-transparent rounded-xl bg-gradient-to-r from-blue-100 to-blue-200 text-gray-700 text-lg sm:text-xl font-medium placeholder-blue-200 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-50 hover:bg-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1"
+                  />
+                </div>
+                <div className="form-group w-full">
+                  <label htmlFor="lastName" className="block text-lg sm:text-xl font-medium text-gray-600">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 block w-full px-4 py-3 border border-transparent rounded-xl bg-gradient-to-r from-blue-100 to-blue-200 text-gray-700 text-lg sm:text-xl font-medium placeholder-blue-200 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-50 hover:bg-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <div className="form-group w-full">
+                  <label htmlFor="email" className="block text-lg sm:text-xl font-medium text-gray-600">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 block w-full px-4 py-3 border border-transparent rounded-xl bg-gradient-to-r from-blue-100 to-blue-200 text-gray-700 text-lg sm:text-xl font-medium placeholder-blue-200 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-50 hover:bg-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1"
+                  />
+                </div>
+                <div className="form-group w-full">
+                  <label htmlFor="phone" className="block text-lg sm:text-xl font-medium text-gray-600">Phone Number</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 block w-full px-4 py-3 border border-transparent rounded-xl bg-gradient-to-r from-blue-100 to-blue-200 text-gray-700 text-lg sm:text-xl font-medium placeholder-blue-200 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-50 hover:bg-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1"
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="message" className="block text-lg sm:text-xl font-medium text-gray-600">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
                   onChange={handleChange}
                   required
-                  className="
-                    mt-1
-                    block
-                    w-full
-                    px-6
-                    py-4
-                    border
-                    border-transparent
-                    rounded-xl
-                    bg-gradient-to-r from-blue-100 to-blue-200
-                    text-gray-700
-                    text-xl
-                    font-medium
-                    placeholder-blue-200
-                    shadow-md
-                    focus:outline-none
-                    focus:ring-4
-                    focus:ring-blue-400
-                    focus:ring-opacity-50
-                    hover:bg-blue-900
-                    transition
-                    duration-300
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1
-                  "
-                />
-            </div>
-            <div className="form-group">
-              <label htmlFor="lastName" className="block text-2xl font-medium text-gray-400">Last Name</label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-                className="mt-1
-                    block
-                    w-full
-                    px-6
-                    py-4
-                    border
-                    border-transparent
-                    rounded-xl
-                    bg-gradient-to-r from-blue-100 to-blue-200
-                    text-gray-700
-                    text-xl
-                    font-medium
-                    placeholder-blue-200
-                    shadow-md
-                    focus:outline-none
-                    focus:ring-4
-                    focus:ring-blue-400
-                    focus:ring-opacity-50
-                    hover:bg-blue-900
-                    transition
-                    duration-300
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1"
-              />
-            </div>
-
-          </div>
-          <div className='flex items-center gap-[10px] '>
-            <div className="form-group">
-              <label htmlFor="email" className="block text-2xl  font-medium text-gray-400">Email Address</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="mt-1
-                    block
-                    w-full
-                    px-6
-                    py-4
-                    border
-                    border-transparent
-                    rounded-xl
-                    bg-gradient-to-r from-blue-100 to-blue-200
-                    text-gray-700
-                    text-xl
-                    font-medium
-                    placeholder-blue-200
-                    shadow-md
-                    focus:outline-none
-                    focus:ring-4
-                    focus:ring-blue-400
-                    focus:ring-opacity-50
-                    hover:bg-blue-900
-                    transition
-                    duration-300
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1"
-                  />
-                </div>
-                <div className="form-group">
-              <label htmlFor="email" className="block text-2xl font-medium text-gray-400">Phone number</label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-                className="mt-1
-                    block
-                    w-full
-                    px-6
-                    py-4
-                    border
-                    border-transparent
-                    rounded-xl
-                    bg-gradient-to-r from-blue-100 to-blue-200
-                    text-gray-700
-                    text-xl
-                    font-medium
-                    placeholder-blue-200
-                    shadow-md
-                    focus:outline-none
-                    focus:ring-4
-                    focus:ring-blue-400
-                    focus:ring-opacity-50
-                    hover:bg-blue-900
-                    transition
-                    duration-300
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1"
-                  />
-                </div>
-
-          </div>
-          
-          <div className="form-group">
-            <label htmlFor="message" className="block text-2xl font-medium text-gray-400">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="mt-1
-                    block
-                    w-full
-                    px-6
-                    py-4
-                    border
-                    border-transparent
-                    rounded-2xl
-                    bg-gradient-to-r from-blue-100 to-blue-200
-                    text-gray-700
-                    text-xl
-                    font-medium
-                    placeholder-blue-200
-                    shadow-md
-                    focus:outline-none
-                    focus:ring-4
-                    focus:ring-blue-700
-                    focus:ring-opacity-50
-                    hover:bg-blue-900
-                    transition
-                    duration-300
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1"
+                  className="mt-1 block w-full px-4 py-3 border border-transparent rounded-2xl bg-gradient-to-r from-blue-100 to-blue-200 text-gray-700 text-lg sm:text-xl font-medium placeholder-blue-200 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-700 focus:ring-opacity-50 hover:bg-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1"
                   rows={4}
                 ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full px-4 py-4 bg-purple text-xl text-white font-semibold rounded-2xl shadow-lg hover:bg-violet-700 transition duration-300"
-          >
-            {loading ? 'Sending...' : 'Send'}
-          </button>
-        </form>
+              </div>
+              <button
+                type="submit"
+                className="w-full px-6 py-4 bg-purple-600 text-lg sm:text-xl text-white bg-purple hover:bg-violet-900 font-semibold rounded-2xl shadow-lg hover:bg-purple-700 transition duration-300"
+              >
+                {loading ? 'Sending...' : 'Send'}
+              </button>
+            </form>
+        </div>
+
       </div>
+      
     </div>
   );
 };
