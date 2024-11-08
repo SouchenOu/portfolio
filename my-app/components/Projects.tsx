@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/Pin";
 
 const Projects = () => {
   return (
-    <div className="py-20 flex flex-col gap-[100px]">
+    <div id="projects" className="py-20 flex flex-col gap-[100px]">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -21,7 +21,7 @@ const Projects = () => {
             {/* Wrap PinContainer inside Link to handle navigation */}
             <Link href={item.href}>
               <PinContainer
-                title="/ui.aceternity.com"
+                title={item.link}
                 href={item.href}
               >
                 <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">

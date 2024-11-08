@@ -2,7 +2,7 @@ export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
-    { name: "Experience", link: "#experience" },
+    { name: "Experiences", link: "#experience" },
   ];
   
   export const GridItems = [
@@ -76,7 +76,7 @@ export const navItems = [
       des: "DentalCare Website helps you to make an appointement with the doctor that can helping you achieve a healthy and beautiful smile..",
       img: "/image6.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
-      link: "/ui.earth.com",
+      link: "www.Dantal.com",
       href: "/websites/dantaire",
     },
     {
@@ -85,7 +85,7 @@ export const navItems = [
       des: "E-learning also called electronic learning or web-based trainin",
       img: "/1.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
-      link: "/ui.yoom.com",
+      link: "www.Elearning.com",
       href: "/websites/learning"
     },
     {
@@ -94,17 +94,17 @@ export const navItems = [
       des: "An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location..",
       img: "/2.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
-      link: "/ui.aiimg.com",
+      link: "www.Ecommerce.com",
       href: "/websites/ecommerce",
     },
     {
       id: 4,
-      title: "Amazon website",
-      des: "I tried to develop a website like Amazon Website, i have here focused only on books to add the in the shario...",
-      img: "/3.png",
-      iconLists: ["/re.svg", "/tail.svg", "js.png"],
-      link: "/ui.apple.com",
-      href: "/websites/amazon"
+      title: "Blog website",
+      des: "A blog, short for weblog, is a frequently updated web page used for personal commentary or business content",
+      img: "/30.png",
+      iconLists: ["/next.svg", "/tail.svg", "js.png"],
+      link: "www.Blog.com",
+      href: "/websites/blog"
     },
     {
       id: 5,
@@ -112,7 +112,7 @@ export const navItems = [
       des: "Digital marketing is a means of promoting and selling products and services through the internet, mobile devices, social media, search engines, ...",
       img: "/4.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-      link: "/ui.apple.com",
+      link: "www.Marketing.com",
       href: "/websites/marketing"
     },
     {
@@ -121,7 +121,7 @@ export const navItems = [
       des: "Online chatting apps are popular software tools that allow users to send and receive real-time messages online. They're heavily used in customer service and can offer text, audio, or video communication.",
       img: "/5.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/socket.png"],
-      link: "/ui.apple.com",
+      link: "www.chat.com",
       href: "websites/chat"
     },
     {
@@ -130,7 +130,7 @@ export const navItems = [
       des: "Buy computers, software and all your IT technology assets in one place with Insight. Buy laptops, computers, hardware, software, cloud solutions and more ...",
       img: "/6.png",
       iconLists: ["/js.png", "/html.png", "/css.png"],
-      link: "/ui.apple.com",
+      link: "www.tech.com",
       href:"/websites/tech",
     },
     {
@@ -139,7 +139,7 @@ export const navItems = [
       des: "Booking website is a Dutch website that offers accommodation in different types of premises ranging from hotels to tourist accommodation and apartments.",
       img: "/7.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "node.png"],
-      link: "/ui.apple.com",
+      link: "www.booking.com",
       href: "/websites/booking"
     },
     {
@@ -148,7 +148,7 @@ export const navItems = [
       des: "Online chatting apps are popular software tools that allow users to send and receive real-time messages online. They're heavily used in customer service and can offer text, audio, or video communication.",
       img: "/8.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
-      link: "/ui.apple.com",
+      link: "www.whatsup.com",
       href: "/websites/whatsup"
     },
     {
@@ -157,7 +157,7 @@ export const navItems = [
       des: "A travel website is a website that provides travel reviews, trip fares, or a combination of both. Over 1.5 billion people book travel per year, 70% of which is done online.",
       img: "/9.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
-      link: "/ui.apple.com",
+      link: "www.whatsup.com",
       href: "/websites/travel"
     },
     {
@@ -166,7 +166,7 @@ export const navItems = [
       des: "build a platform that is similar to Hotjar Survey that would allow to run surveys in avito.ma",
       img: "/10.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png", "node.png"],
-      link: "/ui.apple.com",
+      link: "www.survey.com",
       href: "/websites/survey"
     },
     {
@@ -175,7 +175,7 @@ export const navItems = [
       des: "My latest portfolio.",
       img: "/11.png",
       iconLists: ["/re.svg", "/tail.svg", "js.png"],
-      link: "/ui.apple.com",
+      link: "www.portfolio.com",
       href: "/websites/portfolio"
     },
   ];

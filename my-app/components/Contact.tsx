@@ -1,5 +1,8 @@
 "use client";
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 interface FormData {
   firstName: string;
@@ -10,6 +13,8 @@ interface FormData {
 }
 
 export const Contact: React.FC = () => {
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
     lastName: '',
@@ -26,9 +31,10 @@ export const Contact: React.FC = () => {
     }));
   };
 
+  
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-  
+    setLoading(true);
     try {
       const response = await fetch('http://localhost:5000/send-email', {
         method: 'POST',
@@ -37,30 +43,38 @@ export const Contact: React.FC = () => {
         },
         body: JSON.stringify(formData),
       });
-  
+
       if (response.ok) {
-        alert('Your message was sent successfully!');
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          message: '',
-          phone: '',
-        });
+        toast.success('Your message was sent successfully!');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+
       } else {
         alert('Failed to send message. Please try again later.');
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('An error occurred while sending your message.');
+      toast.error('An error occurred while sending your message.');
+
+    } finally {
+      // Clear the form fields after submission attempt
+      setLoading(false);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: '',
+        phone: '',
+      });
     }
   };
 
   return (
     <div id="contact" className="flex justify-between items-center min-h-screen 0 p-4">
+      <ToastContainer/>
     <img 
       alt="Image Description" 
-      src="/conta.jpg" 
+      src="/2.gif" 
       className="w-full max-w-[800px] h-auto rounded-lg shadow-lg border-2 border-gray-300 transform transition-transform duration-300 ease-in-out hover:scale-105"
     />      
     <div className="w-full flex flex-col gap-[40px] max-w-2xl p-8 rounded-lg shadow-md">
@@ -252,9 +266,9 @@ export const Contact: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-4 bg-blue-900 text-xl text-white font-semibold rounded-2xl shadow-lg hover:bg-blue-700 transition duration-300"
+            className="w-full px-4 py-4 bg-purple text-xl text-white font-semibold rounded-2xl shadow-lg hover:bg-violet-700 transition duration-300"
           >
-            Submit
+            {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
       </div>
