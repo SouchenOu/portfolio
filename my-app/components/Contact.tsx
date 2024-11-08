@@ -26,9 +26,34 @@ export const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+  
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        alert('Your message was sent successfully!');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: '',
+          phone: '',
+        });
+      } else {
+        alert('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred while sending your message.');
+    }
   };
 
   return (
