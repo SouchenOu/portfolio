@@ -8,11 +8,11 @@ import { PinContainer } from "./ui/Pin";
 const Projects = () => {
   return (
     <div id="projects" className="py-20 flex flex-col gap-[100px]">
-      <h1 className="heading">
+      <h1 className="text-[40px] font-bold gap-[10px] flex items-center justify-center">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-[20px] gap-[140px]">
+      <div className="flex flex-wrap items-center justify-center p-[20px] gap-[80px]">
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
@@ -24,7 +24,7 @@ const Projects = () => {
                 title={item.link}
                 href={item.href}
               >
-                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[40vh] lg:h-[30vh] mb-0">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
@@ -38,12 +38,12 @@ const Projects = () => {
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                <h1 className="font-bold lg:text-xl md:text-xl text-base line-clamp-1 p-[10px]">
                   {item.title}
                 </h1>
 
                 <p
-                  className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                  className="lg:text-sm lg:font-normal font-light text-sm line-clamp-2"
                   style={{
                     color: "#BEC1DD",
                     margin: "1vh 0",

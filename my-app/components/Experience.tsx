@@ -6,7 +6,7 @@ import { Button } from "./ui/MovingBorders";
 const Experience = () => {
   return (
     <div id="experience" className="py-20 w-full">
-      <h1 className="heading">
+      <h1 className="text-[40px] flex items-center justify-center gap-[10px] font-bold">
         My <span className="text-purple">work experience</span>
       </h1>
 
@@ -25,7 +25,7 @@ const Experience = () => {
             }}
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div className="flex lg:flex-row flex-col lg:items-center p-1 py-6 md:p-5 lg:p-4 gap-2">
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}

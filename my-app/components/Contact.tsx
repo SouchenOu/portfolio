@@ -67,18 +67,14 @@ export const Contact: React.FC = () => {
     <div id="contact" className="flex flex-col p-[30px]">
         <ToastContainer />
 
-      <h1 className="heading p-4 lg:p-9">
+      <h1 className="text-[40px] flex items-center justify-center gap-[10px] font-bold p-4 lg:p-9">
         Contact <span className="text-purple">Me</span>
       </h1>
 
-      <div className='flex flex-col justify-between lg:flex-row  items-center p-[30px] '>
-          <img 
-            alt="Image Description" 
-            src="/2.gif" 
-            className="w-full max-w-sm lg:max-w-md xl:max-w-3xl h-auto mb-8 lg:mb-0 rounded-lg shadow-lg border-2 border-gray-300 transition-transform duration-300 ease-in-out hover:scale-105"
-          />
+      <div className='flex flex-col items-center justify-center lg:flex-row   p-[30px] '>
+          
           <div className="w-full lg:w-1/2 xl:w-1/3 flex flex-col gap-8 max-w-2xl p-4 sm:p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-purple text-purple-600 mb-6">Get in Touch</h2>
+            {/* <h2 className="text-2xl sm:text-2xl lg:text-[30px] font-semibold text-center text-purple text-purple-600 mb-6">Get in Touch</h2> */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className='flex flex-col sm:flex-row items-center gap-4'>
                 <div className="form-group w-full">
