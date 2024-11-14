@@ -34,7 +34,7 @@ export const Page = () => {
       </h1>
 
       {/* Image Carousel */}
-      <div className="relative w-full max-w-[1200px] h-[800px] overflow-hidden rounded-xl shadow-2xl transition-all duration-500 transform hover:scale-105">
+      <div className="relative w-full max-w-[1200px] h-[800px] overflow-hidden rounded-xl shadow-2xl transition-all duration-500 transform hover:scale-105 lg:block hidden">
         <img
           src={images[currentIndex]}
           alt={`Blog Image ${currentIndex + 1}`}

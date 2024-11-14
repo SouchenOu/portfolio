@@ -67,7 +67,7 @@ export const Contact: React.FC = () => {
     <div id="contact" className="flex flex-col p-[30px]">
         <ToastContainer />
 
-      <h1 className="text-[40px] flex items-center justify-center gap-[10px] font-bold p-4 lg:p-9">
+      <h1 className="lg:text-[40px] text-[20px] flex items-center justify-center gap-[10px] font-bold p-4 lg:p-9">
         Contact <span className="text-purple">Me</span>
       </h1>
 

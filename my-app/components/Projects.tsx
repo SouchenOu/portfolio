@@ -8,11 +8,11 @@ import { PinContainer } from "./ui/Pin";
 const Projects = () => {
   return (
     <div id="projects" className="py-20 flex flex-col gap-[100px]">
-      <h1 className="text-[40px] font-bold gap-[10px] flex items-center justify-center">
+      <h1 className="lg:text-[40px] text-[20px] font-bold gap-[10px] flex items-center justify-center">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-[20px] gap-[80px]">
+      <div className="flex flex-wrap items-center justify-center p-[20px] lg:gap-[80px] gap-[12rem]">
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"

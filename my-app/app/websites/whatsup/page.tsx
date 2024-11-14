@@ -36,7 +36,7 @@ export const Page = () => {
       </h1>
 
       {/* Image Carousel */}
-      <div className="relative w-full max-w-[1800px] h-[900px] overflow-hidden rounded-lg shadow-2xl">
+      <div className="relative w-full max-w-[1800px] h-[900px] overflow-hidden rounded-lg shadow-2xl lg:block hidden">
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}

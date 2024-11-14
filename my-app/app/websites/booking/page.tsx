@@ -42,7 +42,7 @@ export const Page = () => {
       </h1>
 
       {/* Image Carousel */}
-      <div className="relative w-full max-w-[1400px] h-[900px] overflow-hidden rounded-lg shadow-2xl">
+      <div className="relative w-full max-w-[1400px] h-[900px] overflow-hidden rounded-lg shadow-2xl lg:block hidden">
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
@@ -72,7 +72,7 @@ export const Page = () => {
       {/* Visit Link */}
       <div className="mt-10">
         <a
-          href="https://booking-hotelss.netlify.app/"
+          href="https://souchen-booking.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-2xl text-purple-500 hover:text-purple-700 font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 px-6 py-3 rounded-lg transition duration-300 flex items-center gap-3"
