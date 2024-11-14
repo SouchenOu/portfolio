@@ -14,7 +14,6 @@ declare module "@react-three/fiber" {
 
 extend({ ThreeGlobe });
 
-const RING_PROPAGATION_SPEED = 3;
 const aspect = 1.2;
 const cameraZ = 300;
 
@@ -59,7 +58,6 @@ interface WorldProps {
   data: Position[];
 }
 
-let numbersOfRings = [0];
 
 export function Globe({ globeConfig, data }: WorldProps) {
   const [globeData, setGlobeData] = useState<
@@ -172,7 +170,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
       .arcStartLng((d) => (d as Position).startLng)
       .arcEndLat((d) => (d as Position).endLat)
       .arcEndLng((d) => (d as Position).endLng)
-      .arcColor(() => (t: number) => "rgba(255, 0, 0, 0.8)") // example color
       .arcAltitude((d) => (d as Position).arcAlt)
       .arcStroke(() => [0.32, 0.28, 0.3][Math.floor(Math.random() * 3)])
       .arcDashLength(defaultProps.arcLength)
@@ -187,36 +184,10 @@ export function Globe({ globeConfig, data }: WorldProps) {
       .pointAltitude(0.0)
       .pointRadius(2);
 
-    globeRef.current
-      .ringsData([])
-      .ringColor((d: any) => (t: number) => d.color(t))
-      .ringMaxRadius(defaultProps.maxRings)
-      .ringPropagationSpeed(RING_PROPAGATION_SPEED)
-      .ringRepeatPeriod(
-        (defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings
-      );
+   
   };
 
-  useEffect(() => {
-    if (!globeRef.current || !globeData) return;
-
-    const interval = setInterval(() => {
-      if (!globeRef.current || !globeData) return;
-      numbersOfRings = genRandomNumbers(
-        0,
-        data.length,
-        Math.floor((data.length * 4) / 5)
-      );
-
-      globeRef.current.ringsData(
-        globeData.filter((_, i) => numbersOfRings.includes(i))
-      );
-    }, 2000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [globeRef.current, globeData]);
+ 
 
   return (
     <>
@@ -273,13 +244,6 @@ export function World(props: WorldProps) {
   );
 }
 
-function genRandomNumbers(min: number, max: number, count: number) {
-  const randomNumbers = new Set<number>();
-  while (randomNumbers.size < count) {
-    randomNumbers.add(Math.floor(Math.random() * (max - min + 1)) + min);
-  }
-  return [...randomNumbers];
-}
 
 function hexToRgb(hex: string) {
   const bigint = parseInt(hex.replace("#", ""), 16);

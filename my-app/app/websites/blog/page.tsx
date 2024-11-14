@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Image from "next/image";
 
 const images = [
   "/30.png",
@@ -15,7 +16,7 @@ const images = [
   "/39.png",
 ];
 
-export const Page = () => {
+const Page = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -35,10 +36,12 @@ export const Page = () => {
 
       {/* Image Carousel */}
       <div className="relative w-full max-w-[1200px] h-[800px] overflow-hidden rounded-xl shadow-2xl transition-all duration-500 transform hover:scale-105 lg:block hidden">
-        <img
+        <Image
           src={images[currentIndex]}
           alt={`Blog Image ${currentIndex + 1}`}
-          className="w-full h-full object-cover rounded-xl transition-all duration-700 transform hover:scale-105"
+          layout="fill"  // Let the image fill the container
+          objectFit="cover" // Ensure it covers the area without distortion
+          className="w-full h-full rounded-xl transition-all duration-700 transform hover:scale-105"
         />
 
         {/* Navigation Arrows */}

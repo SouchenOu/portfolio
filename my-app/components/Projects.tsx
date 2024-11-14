@@ -1,9 +1,8 @@
-"use client";
-
 import Link from "next/link";  // Import Next.js Link component
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -24,17 +23,26 @@ const Projects = () => {
                 title={item.link}
                 href={item.href}
               >
-                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[40vh] lg:h-[30vh] mb-0">
+                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[40vh] lg:h-[25vh] mb-0">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
                   >
-                    <img src="/bg.png" alt="bgimg" />
+                    {/* Background image with explicit width and height */}
+                    <Image
+                      src="/bg.png"
+                      alt="bgimg"
+                      layout="fill"
+                      objectFit="cover"
+                      className="absolute top-0 left-0"
+                    />
                   </div>
-                  <img
+                  <Image
                     src={item.img}
                     alt="cover"
                     className="z-10 absolute bottom-0"
+                    width={300}   // Adjust the width here based on your preference
+                    height={200}  // Adjust the height here based on your preference
                   />
                 </div>
 
@@ -62,7 +70,14 @@ const Projects = () => {
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
-                        <img src={icon} alt="icon5" className="p-2" />
+                        {/* Icon images with correct width and height */}
+                        <Image
+                          src={icon}
+                          alt={`icon-${index}`}
+                          width={30}   // Adjust the width here
+                          height={30}  // Adjust the height here
+                          className="p-2"
+                        />
                       </div>
                     ))}
                   </div>

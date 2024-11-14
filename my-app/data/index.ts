@@ -84,7 +84,7 @@ export const navItems = [
       title: "Elearning-website",
       des: "E-learning also called electronic learning or web-based trainin",
       img: "/1.png",
-      iconLists: ["/re.svg", "/tail.svg", "js.png"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.png"],
       link: "www.Elearning.com",
       href: "/websites/learning"
     },
@@ -102,7 +102,7 @@ export const navItems = [
       title: "Blog website",
       des: "A blog, short for weblog, is a frequently updated web page used for personal commentary or business content",
       img: "/30.png",
-      iconLists: ["/next.svg", "/tail.svg", "js.png"],
+      iconLists: ["/next.svg", "/tail.svg", "/js.png"],
       link: "www.Blog.com",
       href: "/websites/blog"
     },
@@ -138,7 +138,7 @@ export const navItems = [
       title: "Booking app",
       des: "Booking website is a Dutch website that offers accommodation in different types of premises ranging from hotels to tourist accommodation and apartments.",
       img: "/7.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "node.png"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/node.png"],
       link: "www.booking.com",
       href: "/websites/booking"
     },
@@ -147,7 +147,7 @@ export const navItems = [
       title: "Whatsup platform",
       des: "Online chatting apps are popular software tools that allow users to send and receive real-time messages online. They're heavily used in customer service and can offer text, audio, or video communication.",
       img: "/8.png",
-      iconLists: ["/re.svg", "/tail.svg", "js.png"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.png"],
       link: "www.whatsup.com",
       href: "/websites/whatsup"
     },
@@ -156,7 +156,7 @@ export const navItems = [
       title: "Travel applicaton",
       des: "A travel website is a website that provides travel reviews, trip fares, or a combination of both. Over 1.5 billion people book travel per year, 70% of which is done online.",
       img: "/9.png",
-      iconLists: ["/re.svg", "/tail.svg", "js.png"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.png"],
       link: "www.whatsup.com",
       href: "/websites/travel"
     },
@@ -165,7 +165,7 @@ export const navItems = [
       title: "Survey Hotjar platform",
       des: "build a platform that is similar to Hotjar Survey that would allow to run surveys in avito.ma",
       img: "/10.png",
-      iconLists: ["/re.svg", "/tail.svg", "js.png", "node.png"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.png", "/node.png"],
       link: "www.survey.com",
       href: "/websites/survey"
     },
@@ -174,7 +174,7 @@ export const navItems = [
       title: "Portfolio",
       des: "My latest portfolio.",
       img: "/11.png",
-      iconLists: ["/re.svg", "/tail.svg", "js.png"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.png"],
       link: "www.portfolio.com",
       href: "/websites/portfolio"
     },
