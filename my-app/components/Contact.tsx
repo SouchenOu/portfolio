@@ -73,7 +73,7 @@ export const Contact: React.FC = () => {
 
       <div className='flex flex-col items-center justify-center lg:flex-row   p-[30px] '>
           
-          <div className="w-full lg:w-1/2 xl:w-1/3 flex flex-col gap-8 max-w-2xl p-4 sm:p-8 rounded-lg shadow-md">
+          <div className="w-full lg:w-1/3 xl:w-1/3 flex flex-col gap-8 max-w-2xl p-4 sm:p-8 rounded-lg shadow-md">
             {/* <h2 className="text-2xl sm:text-2xl lg:text-[30px] font-semibold text-center text-purple text-purple-600 mb-6">Get in Touch</h2> */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className='flex flex-col sm:flex-row items-center gap-4'>
